@@ -1,0 +1,25 @@
+
+#include <bits/stdc++.h> 
+#include <boost/multiprecision/cpp_int.hpp> 
+using boost::multiprecision::cpp_int; 
+using namespace std; 
+
+cpp_int Factorial(int number) 
+{ 
+	cpp_int num = 1; 
+	for (int i = 1; i <= number; i++) 
+		num = num * i; 
+	return num; 
+} 
+
+int main() 
+{ 
+	for(int i=0;i<10;i++){
+	    cpp_int x,y;
+	    cin>>x>>y;
+	    cpp_int a = (x+y)/2;
+	    cpp_int b = (x - a);
+	    cout<<a<<endl;
+	    cout<<b<<endl;
+	}
+} 
